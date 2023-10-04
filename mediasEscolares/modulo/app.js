@@ -10,7 +10,7 @@ entradaDados.question('Nome do aluno: ', function (nomeAluno) {
 
     let aluno = nomeAluno
 
-    entradaDados.question('Gênero do aluno (F/M): ', function (sexoAluno) {
+    entradaDados.question('Gênero do aluno : ', function (sexoAluno) {
 
         let sexo= sexoAluno
 
@@ -26,28 +26,28 @@ entradaDados.question('Nome do aluno: ', function (nomeAluno) {
 
                     let professor = nomeProfessor
 
-                    entradaDados.question('Gênero do professor (F/M): ', function (sexoProfessor) {
+                    entradaDados.question('Gênero do professor : ', function (sexoProfessor) {
 
                         let sexoProf = sexoProfessor
 
                         console.log()
 
-                        entradaDados.question('Nota 1: ', function (n1) {
+                        entradaDados.question(' 1° Nota : ', function (n1) {
 
                             let nota1 = n1
 
 
-                            entradaDados.question('Nota 2: ', function (n2) {
+                            entradaDados.question(' 2° Nota : ', function (n2) {
 
                                 let nota2 = n2
 
 
-                                entradaDados.question('Nota 3: ', function (n3) {
+                                entradaDados.question(' 3° Nota : ', function (n3) {
 
                                     let nota3 = n3
 
 
-                                    entradaDados.question('Nota 4: ', function (n4) {
+                                    entradaDados.question(' 4° Nota : ', function (n4) {
 
                                         let nota4 = n4
 

@@ -7,11 +7,11 @@ const calcularMedia = function (n1, n2, n3, n4){
     let media
     
     if(nota1 == '' || nota2 == '' || nota3 == '' ||nota4 == ''  || isNaN(nota1) || isNaN(nota2)|| isNaN(nota3) || isNaN(nota4))
-        console.log('ERRO: Todas as notas devem ser preenchidas com números.')
+        console.log('ERRO: Todos os valores devem ser números.')
 
 
     else if(nota1 > 100 || nota2 > 100 || nota3 > 100 ||nota4 > 100 || nota1 < 0 || nota2 < 0 || nota3 < 0 ||nota4 < 0)
-        console.log('ERRO: As notas só podem estar entre 0 e 100') 
+        console.log('ERRO: As notas só podem ser de 0 a 100') 
     else
         media = (nota1 + nota2 + nota3 + nota4 )/4
 
@@ -25,11 +25,11 @@ const mostrarSituacao = function(mediaFinal){
     let situacao
 
     if(media > 69)
-        situacao = 'aprovado'
+        situacao = 'aprovado(a)'
     else if(media > 49)
-        situacao = 'para exame'
+        situacao = 'recuperação'
     else
-        situacao = 'reprovado'
+        situacao = 'reprovado(a)'
 
     return situacao
 }
@@ -40,12 +40,12 @@ const mostrarSituacaoFinal = function(mediaExame){
     let situacaoFinal
 
     if(media >= 60){
-        situacaoFinal = 'aprovado'
+        situacaoFinal = 'aprovado(a)'
     }else{
-        situacaoFinal = 'reprovado'
+        situacaoFinal = 'reprovado(a)'
     }
 
-    console.log("Média final do exame: " + media + situacaoFinal)
+    console.log("A média final do exame é: " + media + situacaoFinal)
 }
 
 const calcularExame = function(mediaFinal, notaExame){

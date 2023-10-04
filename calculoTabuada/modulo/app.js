@@ -6,19 +6,19 @@ var entradaDados = readline.createInterface({
     output: process.stdout
 })
 
-entradaDados.question('Insira o valor da primeira tabuada: ', function (valorTabuada1) {
+entradaDados.question('Digite o 1° valor (primeira tabuada): ', function (valorTabuada1) {
 
     let valorTabuada = valorTabuada1
 
-    entradaDados.question('Insira o valor da última tabuada ', function (valorTabuadaFinal) {
+    entradaDados.question('Digite o 2° valor (última tabuada) ', function (valorTabuadaFinal) {
 
         let tabuadafinal = valorTabuadaFinal
 
-        entradaDados.question('Insira o primeiro valor a ser calculado: ', function (valor1) {
+        entradaDados.question('Digite o primeiro valor a ser calculado: ', function (valor1) {
 
             let v1 = valor1
 
-            entradaDados.question('Insira o último valor a ser calculado: ', function(valor2){
+            entradaDados.question('Digite o último valor a ser calculado: ', function(valor2){
 
                 let v2 = valor2
 

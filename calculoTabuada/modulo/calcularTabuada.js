@@ -5,8 +5,7 @@ const calcularTabuada = function(valorTabuada, valorTabuadaFinal, valor1, valor2
     let v1 = valor1
     let v2 = valor2
 
-    // entrada da tabuada deverá ser entre 2 e 100, não sendo permitir outros valores; Nenhuma entrada de dados deverá ficar vazia; 
-    //O valor até onde será calculada a tabuada deverá ser entre 1 e 50;
+
 
     if(tabuada == '' || tabuadafinal == '' || v1 == '' || v2 == '')
         console.log(' ERRO: É obrigatória a entrada de todos os valores')

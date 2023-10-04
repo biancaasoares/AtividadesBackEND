@@ -7,11 +7,11 @@ var entradaDeDados = readline.createInterface({
     output: process.stdout
 })
 
-entradaDeDados.question('Informe a sua altura em metros: ', function(alturaUsuario){
+entradaDeDados.question('Digite sua altura em metros: ', function(alturaUsuario){
 
     let altura = alturaUsuario
 
-    entradaDeDados.question('Informe a peso: ', function(pesoUsuario){
+    entradaDeDados.question('Digite o peso: ', function(pesoUsuario){
 
         let peso = pesoUsuario
 

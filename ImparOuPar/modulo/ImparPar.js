@@ -5,24 +5,24 @@ const imparPar = function(numeroInicial, numeroFinal, escolhaUsuario){
     let escolha = Number(escolhaUsuario)
 
     if (valorInicial == '' || valorFinal == '')
-    console.log('>>ERRO: É obrigatória a entrada de todos os valores')
+    console.log('ERRO: É preciso a entrada de TODOS os valores')
 
     else if(isNaN(valorInicial) || isNaN(valorFinal))
-        console.log('>>ERRO: Os valores inseridos devem ser números.')
+        console.log('ERRO: Os valores precisa ser números.')
 
     else if(valorInicial > 500 || valorInicial < 1)
-        console.log('>>ERRO: O valor inicial inserido deve estar entre 0 e  500.')
+        console.log('ERRO: O valor inicial inserido deve ser um número de 0 a 500.')
 
     else if (valorFinal > 1000 || valorFinal < 10)
-        console.log('>>ERRO: Os valor final inserido deve estar entre 10 e 1000.')
+        console.log('ERRO: O valor final  deve ser um número de 10 á 1000.')
 
     else if (valorFinal < valorInicial)
-        console.log('>>ERRO: O valor final não pode ser menor que o inicial.')
+        console.log('ERRO: O valor final NÃO pode ser menor do que o inicial.')
 
     else if (valorFinal == valorInicial)
-        console.log('>>ERRO: O valores não podem ser iguais')
+        console.log('ERRO: Os valores não podem ser iguais')
     else if(escolha != 1 && escolha != 2 && escolha != 3 )
-    console.log('>>ERRO: O valor não corresponde à nenhuma das opções ')
+    console.log('ERRO: O valor não corresponde à nenhuma das opções ')
     else{
         
         let contPar = 0
@@ -36,7 +36,7 @@ const imparPar = function(numeroInicial, numeroFinal, escolhaUsuario){
                     contPar++
                 }
             }
-            console.log('Quantidade de pares encontrados: ' +contPar)
+            console.log('Estes são os números ímpares:  ' +contPar)
         }
 
         if(escolha==2 || escolha==3){        
@@ -49,7 +49,7 @@ const imparPar = function(numeroInicial, numeroFinal, escolhaUsuario){
                 contImpar++
             }
         }
-        console.log('Quantidade de ímpares encontrados: ' +contImpar)
+        console.log('Estes são os números ímpares: ' +contImpar)
     }
 
     }

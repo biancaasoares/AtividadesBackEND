@@ -4,11 +4,11 @@ const calculoFatorial = function (digitarValor) {
     let resultado = valor
 
     if (valor == '' || isNaN(valor))
-        console.log('ERRO: O valor deve ser preenchido com um número')
+        console.log('ERRO: O valor deve ser válido (número)')
 
 
     else if (valor <= 1)
-        console.log('ERRO: O fatorial só pode ser calculado com números maiores que 1')
+        console.log('ERRO: É preciso que o valor seja maior que 1')
     else {
         while (contador < valor) {
             resultado = resultado * (valor - contador)

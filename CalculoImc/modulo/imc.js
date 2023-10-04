@@ -31,17 +31,17 @@ const verificarIMC = (valorIMC) => {
     let grauPeso
 
     if(imc < 18.5)
-        grauPeso = ' Está Abaixo do peso'
+        grauPeso = 'Abaixo do peso'
     else if(imc <= 24.9)
-        grauPeso = ' Está Peso Normal'
+        grauPeso = 'Peso Normal'
     else if(imc <= 29.9)
-        grauPeso = ' Está Acima do Peso (Sobrepeso)'
+        grauPeso = ' Acima do Peso '
     else if(imc <= 34.9)
-        grauPeso = ' Está com Obesidade nível I'
+        grauPeso = ' Obesidade nível I'
     else if(imc <= 39.9)
-        grauPeso = 'Está com Obesidade nível II'
+        grauPeso = 'Obesidade nível II'
     else if(imc > 40)
-        grauPeso = 'Está com Obesidade nível III'
+        grauPeso = 'Obesidade nível III'
 
     return grauPeso
 
